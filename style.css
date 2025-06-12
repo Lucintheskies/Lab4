@@ -7,10 +7,10 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
   padding: 20px;
-  background-color: #fafafa;
+  background-color: #f5e6e6;
 }
 
-/* Header */
+
 header {
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ header img {
 
 header h1 {
   font-size: 2rem;
-  color: #333;
+  color: #d197c0;
 }
 
 /* Descripción */
@@ -38,8 +38,10 @@ header h1 {
 /* Hobbies principales */
 .hobbies-principales {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -50,18 +52,32 @@ header h1 {
   object-fit: cover;
 }
 
-/* Otros hobbies */
+.hobbies-principales h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f4b5ea9b;
+}
 .otros-hobbies {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
 }
-
+.contenedor-flex {
+  display: flex; 
+}
+.otros-hobbies h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #ecdede;
+}
 .otros-hobbies div {
   background-color: #e0e0e0;
   padding: 20px;
   flex: 1 1 150px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 85px;
 }
